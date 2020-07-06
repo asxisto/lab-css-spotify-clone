@@ -6,3 +6,237 @@ Green: #00B172
 White: #FFF
 
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  color: #fff;
+  font-family: ;
+  font-size: 1.8em;
+  letter-spacing: 3px;
+  margin-bottom: 0.4em;
+}
+
+h2 {
+  padding-top: 2em;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: underline;
+  text-decoration-color: #00b172;
+  /* border-bottom: #00b172 2px solid; */
+}
+
+h3 {
+  color: #00b172;
+  font-size: 2em;
+  padding: 0.5em 0;
+}
+
+h4 {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+p {
+  font-size: 2em;
+  font-weight: 100;
+}
+
+/************
+    Nav
+************/
+
+nav {
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em 3em;
+  position: fixed;
+  background-color: #fff;
+}
+
+.logo {
+  height: 2em;
+  /* margin-right: auto; */
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  flex: 2;
+  align-items: center;
+  /* list-style-type: none; */
+}
+
+li {
+  list-style: none;
+  /* padding: auto 0px; */
+}
+
+li a {
+  display: block;
+  margin: 20px;
+  font-size: 0.6em;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 300;
+  /* padding: auto 10px; */
+}
+
+li a:hover {
+  display: block;
+  text-decoration: none;
+  color: #00b172;
+}
+
+/************
+    Main
+************/
+
+#main {
+  /* position: relative; */
+  margin-top: 6em;
+  height: 80vh;
+  background-image: url(/images/landing.jpg);
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#main h4 {
+  margin: 0 10%;
+  text-align: center;
+}
+
+/************
+    Features
+************/
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 50px;
+}
+
+#features .column {
+  text-align: center;
+  width: 80%;
+  margin-top: 5em;
+}
+
+.icon {
+  height: 7rem;
+}
+
+/************
+    Product
+************/
+
+.container {
+  margin: 4em 1em 0 1em;
+  padding: 5em 0;
+  background-color: #00b172;
+}
+
+#product h2,
+#product h3,
+#product p {
+  color: #fff;
+  text-decoration-color: #fff;
+  text-align: left;
+  padding-top: 0;
+  margin: 20px 0;
+}
+
+#product .column {
+  text-align: left;
+}
+
+.spotify-logo {
+  width: 80%;
+  margin: 4em 0;
+}
+
+.app {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 5em;
+  }
+
+  h3 {
+    padding-bottom: 1em;
+  }
+
+  h4 {
+    font-size: 2em;
+    width: 40%;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .logo {
+    height: 4em;
+  }
+
+  li a {
+    font-size: 1.3em;
+  }
+
+  .row {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  #features .column {
+    max-width: 20%;
+  }
+
+  #product .row {
+    display: flex;
+    align-items: center;
+  }
+
+  #product .column {
+    width: 30%;
+  }
+
+  #product h3 {
+    padding: 0;
+  }
+
+  .container {
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .spotify-logo {
+    width: 14%;
+  }
+
+  .app {
+    width: 20em;
+    margin-left: ;
+  }
+}
